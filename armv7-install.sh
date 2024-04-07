@@ -444,10 +444,10 @@ disable_firewall() {
     echo $prompt_msg_2
 
     if [ "$os_name" == "ubuntu" ]; then
-        sudo ufw disable
+        #sudo ufw disable
     elif [ "$os_name" == "centos" ]; then
-        sudo systemctl stop firewalld
-        sudo systemctl disable firewalld
+        #sudo systemctl stop firewalld
+        #sudo systemctl disable firewalld
     else
         echo $prompt_msg_3
     fi
